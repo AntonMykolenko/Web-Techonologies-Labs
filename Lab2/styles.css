@@ -1,0 +1,60 @@
+.flex {
+	display: flex;
+}
+.flex1 {
+	display: flex;
+	margin-top: -1px;
+}
+.table {
+	border: 1px solid;
+	width: fit-content;
+	display: flex;
+	flex-direction: column;
+}
+.s1 {
+	border: 1px solid;
+	width: 90px;
+	height: 64px;
+	margin: 1px;
+}
+
+.s4 {
+	border: 1px solid;
+	width: 90px;
+	height: 30px;
+	margin: 1px;
+	margin-bottom: 2px;
+}
+.s2 {
+	margin: 1px;
+	border: 1px solid;
+	width: 185px;
+	height: 30px;
+}
+.s3 {
+	margin: 1px;
+	border: 1px solid;
+	width: calc(100% - 3.5px);
+	height: 30px;
+}
+.b {
+	height: fit-content;
+	display: flex;
+	flex-direction: column;
+}
+.inB {
+	height: fit-content;
+
+	display: flex;
+	flex-direction: row;
+}
+.s5 {
+	border: 1px solid;
+	height: 97px;
+	margin: 1px;
+}
+.s6 {
+	border: 1px solid;
+	height: 63px;
+	margin: 1px;
+}
