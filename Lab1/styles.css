@@ -1,0 +1,45 @@
+.header {
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+	margin: 0 20px;
+}
+.header-section {
+	font-weight: 600;
+	width: 100%;
+	font-size: 32px;
+}
+.title {
+	font-size: 32px;
+	font-weight: 600;
+	margin: 0 auto;
+}
+.accent-text {
+	color: #e41919;
+}
+.sub-title {
+	font-size: 24px;
+	margin: 0 0 0 auto;
+}
+.bold-text {
+	font-weight: 600;
+}
+.link {
+	font-style: italic;
+}
+p {
+	font-size: 18px;
+}
+
+img {
+	width: 600px;
+	margin: 0 auto;
+}
+.img-container {
+	display: flex;
+	justify-content: center;
+}
+.italic-bold {
+	font-style: italic;
+	font-weight: 600;
+}
