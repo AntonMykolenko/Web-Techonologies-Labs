@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<form action="#">
+			<h4>Pizza shop 2.0</h4>
+			<section class="section">
+				<div class="naming">Name</div>
+				<div class="content">
+					<input type="text" required />
+				</div>
+			</section>
+			<section class="section">
+				<div class="naming">Pizza Topping</div>
+				<div class="content">
+					<input
+						type="radio"
+						id="Supreme"
+						name="topping"
+						value="Supreme"
+						required
+					/>
+					<label for="Supreme">Supreme</label><br />
+					<input
+						type="radio"
+						id="Vegetarian"
+						name="topping"
+						value="Vegetarian"
+						required
+					/>
+					<label for="css">Vegetarian</label><br />
+					<input
+						type="radio"
+						id="Hawaiian"
+						name="topping"
+						value="Hawaiian"
+						required
+					/>
+					<label for="css">Hawaiian</label><br />
+				</div>
+			</section>
+			<section class="section">
+				<div class="naming">
+					<label for="Sauce">Pizza Sauce</label>
+				</div>
+				<div class="content">
+					<select id="Sauce">
+						<option value="Tomato">Tomato</option>
+						<option value="Garlic">Garlic</option>
+						<option value="BBQ">BBQ</option>
+					</select>
+				</div>
+			</section>
+			<section class="section">
+				<div class="naming">
+					<label for="Sauce">Optional Extras</label>
+				</div>
+				<div class="content">
+					<input type="checkbox" id="Cheese" name="extras" value="Cheese" />
+					<label for="Cheese">Extra Cheese</label>
+					<input type="checkbox" id="Gluten" name="extras" value="Gluten" />
+					<label for="Gluten">Gluten Free Base</label>
+				</div>
+			</section>
+			<section class="section">
+				<div class="area">
+					<span>Delivery Instructions:</span>
+					<textarea></textarea>
+				</div>
+			</section>
+			<section class="section">
+				<div class="area"><button type="submit">Send my Order</button></div>
+			</section>
+		</form>
+	</body>
+	<style>
+		textarea {
+			border-radius: 0;
+			height: 60px;
+			border: 1px solid black;
+		}
+		button {
+			width: 30%;
+		}
+		form {
+			gap: 2px;
+			padding: 2px;
+			border: 1px solid black;
+			display: flex;
+			flex-direction: column;
+			width: 400px;
+		}
+		.section {
+			display: flex;
+			align-items: stretch;
+			gap: 2px;
+		}
+		h4 {
+			margin: 0;
+			border: 1px solid black;
+			display: flex;
+			flex-grow: 1;
+			align-items: center;
+			justify-content: center;
+		}
+		.naming {
+			display: flex;
+			width: 30%;
+			border: 1px solid black;
+			padding: 4px 0;
+			align-items: baseline;
+			align-items: center;
+		}
+		.content {
+			color: black;
+			padding: 2.5px;
+			width: 70%;
+			border: 1px solid;
+		}
+		.area {
+			padding: 2px;
+			border: 1px solid black;
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			gap: 4px;
+		}
+	</style>
+</html>
