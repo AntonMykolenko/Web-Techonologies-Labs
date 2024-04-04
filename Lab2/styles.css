@@ -16,6 +16,7 @@
 	width: 90px;
 	height: 64px;
 	margin: 1px;
+	color: black;
 }
 
 .s4 {
@@ -24,18 +25,21 @@
 	height: 30px;
 	margin: 1px;
 	margin-bottom: 2px;
+	color: black;
 }
 .s2 {
 	margin: 1px;
 	border: 1px solid;
 	width: 185px;
 	height: 30px;
+	color: black;
 }
 .s3 {
 	margin: 1px;
 	border: 1px solid;
 	width: calc(100% - 3.5px);
 	height: 30px;
+	color: black;
 }
 .b {
 	height: fit-content;
@@ -51,10 +55,12 @@
 .s5 {
 	border: 1px solid;
 	height: 97px;
+	color: black;
 	margin: 1px;
 }
 .s6 {
 	border: 1px solid;
 	height: 63px;
+	color: black;
 	margin: 1px;
 }
