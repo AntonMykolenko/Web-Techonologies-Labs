@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="toolbar">
+				<span class="red"></span>
+				<span class="orange"></span>
+				<span class="green"></span>
+			</div>
+			<div class="input-section">0</div>
+			<table>
+				<tr>
+					<td><button class="default">AC</button></td>
+					<td><button class="default">±</button></td>
+					<td><button class="default">%</button></td>
+					<td><button class="calculate">÷</button></td>
+				</tr>
+				<tr>
+					<td><button class="number">7</button></td>
+					<td><button class="number">8</button></td>
+					<td><button class="number">9</button></td>
+					<td><button class="calculate">×</button></td>
+				</tr>
+				<tr>
+					<td><button class="number">4</button></td>
+					<td><button class="number">5</button></td>
+					<td><button class="number">6</button></td>
+					<td><button class="calculate">-</button></td>
+				</tr>
+				<tr>
+					<td><button class="number">1</button></td>
+					<td><button class="number">2</button></td>
+					<td><button class="number">3</button></td>
+					<td><button class="calculate">+</button></td>
+				</tr>
+				<tr>
+					<td colspan="2"><button class="long">0</button></td>
+					<td><button class="number">,</button></td>
+					<td><button class="calculate">=</button></td>
+				</tr>
+			</table>
+		</div>
+	</body>
+	<style>
+		.long {
+			width: 100%;
+			border: none;
+			background-color: #585858;
+			height: 40px;
+			color: #fafafa;
+			font-size: 14px;
+			padding: 0;
+			min-width: 23px;
+		}
+		.default {
+			width: 100%;
+			border: none;
+			background-color: #59596e;
+			height: 40px;
+			color: #fafafa;
+			font-size: 14px;
+			padding: 0;
+		}
+		.calculate {
+			width: 100%;
+			border: none;
+			background-color: #de8225;
+			height: 40px;
+			color: #fafafa;
+			font-size: 14px;
+			padding: 0;
+			min-width: 23px;
+		}
+		.number {
+			width: 100%;
+			border: none;
+			background-color: #585858;
+			height: 40px;
+			color: #fafafa;
+			font-size: 14px;
+			padding: 0;
+			min-width: 23px;
+		}
+		.container {
+			background-color: #444453;
+			display: flex;
+			flex-direction: column;
+			width: 193px;
+			height: 290px;
+			border-radius: 6px;
+			overflow: hidden;
+			box-sizing: border-box;
+      border: 1px solid rgb(153, 153, 153);
+		}
+		table {
+			width: calc(100% + 2px);
+			margin-left: -1px;
+		}
+		.input-section {
+			width: calc(100% - 9px);
+			font-size: 60px;
+			color: #fafafa;
+			font-weight: 400;
+			display: flex;
+			padding-right: 9px;
+			justify-content: flex-end;
+		}
+		.toolbar {
+			padding: 6px 6px 0;
+			display: flex;
+			gap: 6px;
+			align-items: center;
+			& span {
+				height: 10px;
+				width: 10px;
+				border-radius: 100%;
+			}
+		}
+		.red {
+			background-color: rgb(206, 40, 40);
+		}
+		.orange {
+			background-color: rgb(206, 145, 40);
+		}
+		.green {
+			background-color: rgb(13, 185, 22);
+		}
+		table,
+		th,
+		td {
+			border: 1px solid black;
+			border-collapse: collapse;
+			padding: 0;
+		}
+	</style>
+</html>
