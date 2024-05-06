@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="container">
+        <div class="screen">0</div>
+        <div class="button-row">
+            <div class="button">AC</div>
+            <div class="button">+/-</div>
+            <div class="button">%</div>
+            <div class="button orange">/</div>
+        </div>
+        <div class="button-row">
+            <div class="button">7</div>
+            <div class="button">8</div>
+            <div class="button">9</div>
+            <div class="button orange">x</div>
+        </div>
+        <div class="button-row">
+            <div class="button">4</div>
+            <div class="button">5</div>
+            <div class="button">6</div>
+            <div class="button orange">-</div>
+        </div>
+        <div class="button-row">
+            <div class="button">1</div>
+            <div class="button">2</div>
+            <div class="button">3</div>
+            <div class="button orange">+</div>
+        </div>
+        <div class="button-row">
+            <div class="button zero">0</div>
+            <div class="button comma">,</div>
+            <div class="button orange equals">=</div>
+        </div>
+    </div>
+</body>
+<style>
+.container {
+    width: 300px;
+    background: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .screen {
+    background: #666;
+    color: white;
+    padding: 20px;
+    font-size: 2em;
+    grid-column: 1 / -1;
+  }
+  
+  .button-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .button {
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.3s;
+    background-color: #444;
+    border: 1px solid black;
+  }
+  
+  .button:not(:last-child) {
+    border-right: 1px solid #666;
+  }
+  
+  .button.orange {
+    background: orange;
+  }
+  
+  .button.orange:hover {
+    background: darkorange;
+  }
+  
+  .button.zero {
+    grid-column: 1 / span 3;
+  }
+  
+  .button.comma {
+    grid-column: 3;
+  }
+  
+  .button.equals {
+    grid-column: 4;
+  }
+</style>
+</html>
