@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+			rel="stylesheet"
+		/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Anton</title>
+		<script src="https://unpkg.com/akar-icons-fonts"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="content">
+				<div class="sidebar">
+					<img src="./public/avatar.jpg" alt="Avatar" />
+					<h2 class="name-title">Anton <span>Mykolenko</span></h2>
+					<div class="badge">Backend Developer</div>
+					<div class="social">
+						<i class="ai-facebook-fill"></i>
+						<i class="ai-twitter-fill"></i>
+						<i class="ai-linkedin-fill"></i>
+					</div>
+					<div class="contacts">
+						<div class="contact">
+							<i class="ai-calendar"></i>
+							October 11, 2004
+						</div>
+						<div class="contact">
+							<i class="ai-check-in"></i>
+							Kyiv, Ukraine
+						</div>
+						<div class="contact">
+							<i class="ai-envelope"></i>
+							gaqpy@gmail.com
+						</div>
+						<div class="contact">
+							<i class="ai-mobile-device"></i>
+							+380 68 872 5387
+						</div>
+						<div class="contact">
+							<i class="ai-telegram-fill"></i>
+							gaqpyyy
+						</div>
+					</div>
+					<div class="button">
+						<i class="ai-download"></i>
+						Download CV
+					</div>
+				</div>
+				<div class="wrapper">
+					<nav class="navbar">
+						<div class="active nav-item">about</div>
+						<div class="nav-item">resume</div>
+						<div class="nav-item">portfolio</div>
+						<div class="nav-item">blog</div>
+						<div class="nav-item">contact</div>
+					</nav>
+					<h3 class="section-title">About Me</h3>
+					<div class="highlight"><span></span></div>
+					<div class="text">
+						I am a young backend developer from Kiev, Ukraine, working in web
+						development and product creation for programmers. I like to turn
+						complex problems into simple, readable code.
+					</div>
+					<div class="text">
+						My job is to create magic for your website in such a way that it is
+						functional and user-friendly, but at the same time fast and
+						error-free. My goal is to realize a technical idea and deliver it to
+						my frontendering partner. I have created backend for many well-known
+						branded products.
+					</div>
+					<h3 class="cards-section-title">What I'm Doing</h3>
+					<div class="cards-section">
+						<div class="card">
+							<i class="ai-typescript-fill"></i>
+							<h4>Web Design</h4>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+								perferendis delectus.
+							</p>
+						</div>
+						<div class="card">
+							<i class="ai-air"></i>
+							<h4>Web Development</h4>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+								perfer.
+							</p>
+						</div>
+						<div class="card">
+							<i class="ai-people-group"></i>
+							<h4>Great Team Work</h4>
+							<p>Lorem ipsum dolor sit amet adipisicing elit. Soluta perfer.</p>
+						</div>
+						<div class="card">
+							<i class="ai-chat-edit"></i>
+							<h4>Work with Chat GPT</h4>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+								perfer.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+
+<style>
+	html,
+	body {
+		height: 100%;
+		width: 100%;
+		margin: 0;
+		background-color: #eaebf1;
+		font-family: 'Open Sans', sans-serif;
+	}
+	.container {
+		display: flex;
+		height: 100%;
+		justify-content: center;
+		align-items: center;
+	}
+	.content {
+		overflow: hidden;
+		display: flex;
+		max-width: 1010px;
+		max-height: 900px;
+		height: 100%;
+		width: 100%;
+		background-color: #ffffff;
+		border-radius: 16px;
+		flex-direction: row;
+	}
+	.sidebar {
+		background-color: #f3f7f8;
+		min-width: 265px;
+		height: 100%;
+		border-radius: 16px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 20px;
+		& img {
+			height: 155px;
+			width: 155px;
+			border-radius: 32px;
+			margin-top: 100px;
+		}
+	}
+	.name-title {
+		display: flex;
+		gap: 6px;
+		font-weight: 400;
+		font-size: 24px;
+		margin: 0;
+		color: #455061;
+		font-family: 'Times New Roman', Times, serif;
+		& span {
+			color: #3e4b60;
+			font-weight: 600;
+		}
+	}
+	.button {
+		height: 58px;
+		width: 200px;
+		font-size: 16px;
+		gap: 8px;
+		color: #fff;
+		background-color: #224af2;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 16px;
+		& i {
+			color: #fff;
+		}
+	}
+	.badge {
+		font-size: 12px;
+		color: #455061;
+		border-radius: 18px;
+		padding: 8px 12px;
+		background-color: #e7e9ee;
+	}
+	.social {
+		display: flex;
+		gap: 8px;
+		align-items: center;
+		& i {
+			color: #46525d;
+		}
+	}
+	.contacts {
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+	}
+	.contact {
+		display: flex;
+		font-size: 14px;
+		color: #455061;
+		gap: 8px;
+		& i {
+			color: #46525d;
+		}
+	}
+
+	.wrapper {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+	.navbar {
+		display: flex;
+		gap: 6px;
+		width: calc(100% - 40px);
+		padding: 20px;
+		justify-content: flex-end;
+		margin-bottom: 24px;
+	}
+	.nav-item {
+		padding: 8px 10px;
+		border-radius: 6px;
+		text-transform: uppercase;
+		font-size: 14px;
+		color: #6a6b6c;
+		letter-spacing: 0.6px;
+	}
+	.active {
+		background-color: #2a44f7;
+		color: #fff;
+	}
+	.section-title {
+		color: #414c63;
+		font-size: 24px;
+		font-weight: 500;
+		margin: 0;
+		padding-left: 30px;
+	}
+	.highlight {
+		width: 50px;
+		height: 5px;
+		background: #2a43f6;
+		border-radius: 4px;
+		display: flex;
+		margin-left: 30px;
+		overflow: hidden;
+		margin-top: 14px;
+		& span {
+			width: 17px;
+			height: 5px;
+			background-color: #fb8f49;
+		}
+	}
+	.text {
+		margin: 20px 40px 0 30px;
+		color: #777777;
+	}
+	.cards-section-title {
+		color: #414c63;
+		font-size: 24px;
+		font-weight: 500;
+		margin: 0;
+		margin-top: 30px;
+		padding-left: 30px;
+	}
+	.cards-section {
+		display: flex;
+		gap: 25px;
+		margin: 20px 30px 0;
+		width: calc(100% - 60px);
+		flex-wrap: wrap;
+	}
+	.card {
+		height: 185px;
+		width: 324px;
+		border: 3px solid #f3f7f8;
+		border-radius: 16px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 10px;
+		& h4 {
+			font-size: 14px;
+			color: #414c63;
+			font-weight: 600;
+			margin: 0;
+		}
+		& i {
+			font-size: 42px;
+			color: #224af2;
+		}
+		& p {
+			color: #414c63;
+			font-size: 12px;
+			margin: 0 30px;
+			text-align: center;
+		}
+	}
+</style>
